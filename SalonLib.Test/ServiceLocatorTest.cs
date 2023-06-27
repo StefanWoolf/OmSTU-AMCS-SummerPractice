@@ -11,6 +11,7 @@ public class ServiceLocatorTest
     }
 
     [Fact]
+
     public void Service2Test()
     {
         var expected = "У рояля";
@@ -19,9 +20,9 @@ public class ServiceLocatorTest
     }
 
     [Fact]
-    public void Service3Test()
+      public void Service3Test()
     {
-        var expected = "В читальном зале";
+        var expected = "В кабинете";
         var actual = SalonLib.ServiceLocator.GetService("Писать статьи");
         Assert.Equal(expected, actual);
     }
@@ -33,4 +34,6 @@ public class ServiceLocatorTest
         var actual = SalonLib.ServiceLocator.GetService("Играть в карты");
         Assert.Equal(expected, actual);
     }
-}
+    
+}  
+
